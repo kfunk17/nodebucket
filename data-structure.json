@@ -1,0 +1,19 @@
+
+{
+    "empId": 1007,
+    "firstName": "Sandra",
+    "lastName": "Dee",
+    "todo": [
+        {
+            "text": "stuff to do"
+        }
+
+    ],
+    "done": [
+        {
+            "text": "stuff that is done"
+        }
+
+    ]
+}
+
