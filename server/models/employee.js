@@ -10,13 +10,14 @@
 
 /*Imports Mongoose*/
 const mongoose = require('mongoose');
-
+const Item = require('./item');
 
 let employeeSchema = mongoose.Schema({
     empId: {type: String, unique: true, dropDups: true},
     firstName: {type: String},
-    lastName: {type:String}
-
+    lastName: {type:String},
+    todo: [Item],
+    done: [Item]
 });
 
 

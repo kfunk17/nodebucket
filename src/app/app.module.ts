@@ -29,7 +29,9 @@ import { LoginComponent } from './pages/login/login.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-
+import { CookieService } from 'ngx-cookie-service';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import {AuthGuard} from './shared/guards/auth.guard';
 
 @NgModule({
   declarations: [
@@ -40,6 +42,7 @@ import {MatInputModule} from '@angular/material/input';
     LoginComponent
   ],
   imports: [
+    MatSnackBarModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
@@ -54,7 +57,7 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     MatInputModule
   ],
-  providers: [],
+  providers: [CookieService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

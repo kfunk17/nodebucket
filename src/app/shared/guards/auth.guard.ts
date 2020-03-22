@@ -26,7 +26,7 @@ export class AuthGuard implements CanActivate {
     }
     else {
     // User that is not signed in will be redirected to the sign-in component.
-      this.router.navigate(['/session/signin']);
+      this.router.navigate(['/session/login']);
       return false;
     }
   }

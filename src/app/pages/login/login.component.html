@@ -9,14 +9,34 @@
 ;===========================================
 */
 -->
+<div fxLayout="column">
+    <mat-card fxFlex class="login-container mat-elevation-z8">
+    <mat-card-title class="login-title mat-headline">Employee Sign In</mat-card-title><br />
+    <mat-card-subtitle class="login-subtitle mat-headline">You must enter a valid employee ID to proceed.</mat-card-subtitle>
+    <mat-card-content>
+        <mat-card class="mat-elevation-z0" fxLayout="column" fxLayoutGap="10px">
+            <form [formGroup]="form" (ngSubmit)="login(); form.reset()" #loginForm="ngForm">
 
-<mat-card>
-<mat-form-field color="warn">
-    <mat-label>
-        Enter your employee id:
-    </mat-label>
-    <input matInput>
-</mat-form-field>
-<button type="submit" color="warn" mat-raised-button>SUBMIT</button>
-</mat-card>
+                <mat-card-content>
 
+                    <mat-form-field fxFlex>
+                        <input matInput
+                                    [formControl]="form.controls ['empId']" placeholder="Employee ID" />
+                                    <mat-error *ngIf="form.controls['empId'].hasError('required') && form.controls['empId'].touchedr">
+                                        Employee ID is a required field.
+                                    </mat-error>
+                                    <mat-error *ngIf="form.controls['empId'].hasError('pattern') && form.controls['empId'].touchedr">
+                                        Employee ID must be a numerical value.
+                                    </mat-error>
+                                    </mat-form-field>
+
+                                    </mat-card-content>
+
+                                    <mat-card-actions>
+                                        <button type="submit" fxFlex mat-raised-button [disabled]="!form.valid" color="primary">Submit</button>
+                                    </mat-card-actions>
+                                    </form>
+        </mat-card>
+    </mat-card-content>  
+ </mat-card>
+</div>
