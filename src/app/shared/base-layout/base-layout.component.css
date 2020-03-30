@@ -21,8 +21,8 @@
 
 .footer {
   bottom: 0;
-  position: absolute;
   width: 100%;
+  margin-top:100px;
 }
 
 .footer-content {
@@ -38,4 +38,17 @@
 
 .bu-link:hover {
   text-decoration: underline;
+}
+
+.form-control{
+  margin-left:500px;
+  font-size: 15px;
+  font-family: helvetica;
+  width:200px;
+  background-color: white;
+  border-radius:5px;
+  height:25px;
+  color: white;
+  border: none;
+
 }

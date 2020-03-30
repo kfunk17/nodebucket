@@ -18,6 +18,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const path = require('path');
 const mongoose = require('mongoose');
+mongoose.set('useCreateIndex', true);
 const Employee = require('./models/employee');
 
 
