@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+============================================
+; Title: Nodebucket styles.css
+; Author: Richard Krasso
+; Modified by: Karie Funk
+; Date: 31 March 2020
+; Description: This will be an app
+; showing to do and done tasks for employees
+;===========================================
+*/
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  min-height: 100vh; }

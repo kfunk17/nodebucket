@@ -1,3 +1,15 @@
+/*
+====================================================
+; Title: Nodebucket task-create-dialog.component.ts
+; Author: Richard Krasso
+; Modified by: Karie Funk
+; Date: 31 March 2020
+; Description: This will be an app
+; showing to do and done tasks for employees
+;==================================================
+*/
+
+
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators} from '@angular/forms';
 import { MatDialogRef } from '@angular/material/dialog';

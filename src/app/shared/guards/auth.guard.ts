@@ -1,6 +1,6 @@
 /*
 ============================================
-; Title: Nodebucket auth.guard.js
+; Title: Nodebucket auth.guard.ts
 ; Author: Richard Krasso
 ; Modified by: Karie Funk
 ; Date: 15 March 2020

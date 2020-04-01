@@ -1,3 +1,14 @@
+/* 
+==============================================
+; Title: Nodebucket base-layout.component.css
+; Author: Richard Krasso
+; Modified by: Karie Funk
+; Date: 31 March 2020
+; Description: This will be an app
+; showing to do and done tasks for employees
+;=============================================
+*/
+
 .logo {
   margin-left: 75px;
   font-size: 24px;
@@ -48,7 +59,7 @@
   background-color: white;
   border-radius:5px;
   height:25px;
-  color: white;
+  color: black;
   border: none;
 
 }
